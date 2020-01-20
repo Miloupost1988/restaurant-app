@@ -21,7 +21,7 @@ class SearchBar extends React.Component {
       <div className="SearchBar">
         <div className="SearchBar-sort-options">
           <ul>
-            {this.renderSortByOptions}
+            {this.renderSortByOptions()}
           </ul>
         </div>
         <div className="SearchBar-fields">
@@ -29,7 +29,7 @@ class SearchBar extends React.Component {
           <input placeholder="Where?" />
         </div>
         <div className="SearchBar-submit">
-          <a>Let's Go</a>
+          <button>Let's Go</button>
         </div>
       </div>
     );
